@@ -41,6 +41,7 @@ stages:
         ArtifactName: 'manifests'
         publishLocation: 'Container'
 
+
 # Stage 2 (Deploy)
 #  Download the k8s files
 # Deploy to k8s cluster with Docker image

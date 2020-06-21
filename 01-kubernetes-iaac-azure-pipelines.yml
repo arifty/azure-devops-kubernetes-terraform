@@ -33,9 +33,18 @@ steps:
     environmentServiceName: 'azure-resource-manager-service-connection'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
 
+<<<<<<< HEAD
 ### FOR DESTROYING THE KUBERNETES CLUSTER ###
 # - task: TerraformCLI@0
 #   inputs:
 #     command: 'destroy'
 #     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
 #     environmentServiceName: 'azure-resource-manager-service-connection'
+=======
+
+- task: TerraformCLI@0
+  inputs:
+    command: 'destroy'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
+    environmentServiceName: 'azure-resource-manager-service-connection'
+>>>>>>> 1ecb67bfb333702dba16832bd856796622ac1565

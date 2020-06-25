@@ -48,11 +48,11 @@ stages:
 # image:100  => Deploy to K8S
 # apply => Kubectl apply -f deplpyment.yaml
 
-- stage: Build
-  displayName: Build image
+- stage: Deploy
+  displayName: Deploy image
   jobs:  
-  - job: Build
-    displayName: Build
+  - job: Deploy
+    displayName: Deploy
     pool:
       vmImage: 'ubuntu-latest'
     steps:

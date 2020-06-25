@@ -11,6 +11,7 @@ steps:
 # init - backend
 # apply
 
+
 - task: TerraformTaskV1@0
   inputs:
     provider: 'aws'
